@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    max-width: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#authenticate-button, #calculate-button, #clear-button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #4f92f7;
+    color: #fff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#download-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1066d6;
+    color: #ffffff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#authenticate-button:hover, #calculate-button:hover, #clear-button:hover{
+    background-color: #8eb4ee;
+}
+
+#download-button:hover {
+    background-color: #344166;
+}
+
+#chart-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+#chart-container::before {
+    content: "";
+    background: url('cropped-symmetry_blue_rgb1-2.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#chart {
+    position: relative;
+    z-index: 2;
+}
